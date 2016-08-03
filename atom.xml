@@ -4,9 +4,9 @@
   <subtitle>记录开发学习笔记</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://hdev.me/"/>
   <updated>2016-08-03T02:01:30.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://hdev.me/</id>
   
   <author>
     <name>Johnny Liu</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2016/08/01/hello-world/"/>
-    <id>http://yoursite.com/2016/08/01/hello-world/</id>
+    <link href="http://hdev.me/2016/08/01/hello-world/"/>
+    <id>http://hdev.me/2016/08/01/hello-world/</id>
     <published>2016-08-01T06:27:40.000Z</published>
     <updated>2016-08-03T02:01:30.000Z</updated>
     
@@ -40,7 +40,7 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="http://hdev.me/tags/hexo/"/>
     
   </entry>
   

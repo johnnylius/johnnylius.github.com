@@ -4,9 +4,9 @@
   <subtitle>在学习中自娱自乐</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://hdev.me/"/>
+  <link href="https://macxer.com/"/>
   <updated>2017-04-28T14:40:24.000Z</updated>
-  <id>http://hdev.me/</id>
+  <id>https://macxer.com/</id>
   
   <author>
     <name>Johnny Liu</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>关于HTTPS知识的文章整理</title>
-    <link href="http://hdev.me/2017/04/28/https-articles/"/>
-    <id>http://hdev.me/2017/04/28/https-articles/</id>
+    <link href="https://macxer.com/2017/04/28/https-articles/"/>
+    <id>https://macxer.com/2017/04/28/https-articles/</id>
     <published>2017-04-28T09:24:00.000Z</published>
     <updated>2017-04-28T14:40:24.000Z</updated>
     
@@ -44,21 +44,21 @@
     
     </summary>
     
-      <category term="iOS" scheme="http://hdev.me/categories/iOS/"/>
+      <category term="iOS" scheme="https://macxer.com/categories/iOS/"/>
     
     
-      <category term="HTTPS" scheme="http://hdev.me/tags/HTTPS/"/>
+      <category term="HTTPS" scheme="https://macxer.com/tags/HTTPS/"/>
     
-      <category term="SSL/TLS" scheme="http://hdev.me/tags/SSL-TLS/"/>
+      <category term="SSL/TLS" scheme="https://macxer.com/tags/SSL-TLS/"/>
     
-      <category term="数字证书" scheme="http://hdev.me/tags/%E6%95%B0%E5%AD%97%E8%AF%81%E4%B9%A6/"/>
+      <category term="数字证书" scheme="https://macxer.com/tags/%E6%95%B0%E5%AD%97%E8%AF%81%E4%B9%A6/"/>
     
   </entry>
   
   <entry>
     <title>SSL/TLS握手阶段概述</title>
-    <link href="http://hdev.me/2017/04/28/ssl-handshake/"/>
-    <id>http://hdev.me/2017/04/28/ssl-handshake/</id>
+    <link href="https://macxer.com/2017/04/28/ssl-handshake/"/>
+    <id>https://macxer.com/2017/04/28/ssl-handshake/</id>
     <published>2017-04-28T07:50:00.000Z</published>
     <updated>2017-04-28T14:40:24.000Z</updated>
     
@@ -75,19 +75,19 @@
     
     </summary>
     
-      <category term="iOS" scheme="http://hdev.me/categories/iOS/"/>
+      <category term="iOS" scheme="https://macxer.com/categories/iOS/"/>
     
     
-      <category term="HTTPS" scheme="http://hdev.me/tags/HTTPS/"/>
+      <category term="HTTPS" scheme="https://macxer.com/tags/HTTPS/"/>
     
-      <category term="SSL/TLS" scheme="http://hdev.me/tags/SSL-TLS/"/>
+      <category term="SSL/TLS" scheme="https://macxer.com/tags/SSL-TLS/"/>
     
   </entry>
   
   <entry>
     <title>数据加密的基础知识</title>
-    <link href="http://hdev.me/2017/04/18/basic-knowledge-of-data-encryption/"/>
-    <id>http://hdev.me/2017/04/18/basic-knowledge-of-data-encryption/</id>
+    <link href="https://macxer.com/2017/04/18/basic-knowledge-of-data-encryption/"/>
+    <id>https://macxer.com/2017/04/18/basic-knowledge-of-data-encryption/</id>
     <published>2017-04-18T12:03:00.000Z</published>
     <updated>2017-04-28T14:40:24.000Z</updated>
     
@@ -122,19 +122,19 @@
     
     </summary>
     
-      <category term="iOS" scheme="http://hdev.me/categories/iOS/"/>
+      <category term="iOS" scheme="https://macxer.com/categories/iOS/"/>
     
     
-      <category term="Encryption" scheme="http://hdev.me/tags/Encryption/"/>
+      <category term="Encryption" scheme="https://macxer.com/tags/Encryption/"/>
     
-      <category term="HTTPS" scheme="http://hdev.me/tags/HTTPS/"/>
+      <category term="HTTPS" scheme="https://macxer.com/tags/HTTPS/"/>
     
   </entry>
   
   <entry>
     <title>国行iOS10网络权限问题的另类处理</title>
-    <link href="http://hdev.me/2016/11/14/ios10-allow-use-data/"/>
-    <id>http://hdev.me/2016/11/14/ios10-allow-use-data/</id>
+    <link href="https://macxer.com/2016/11/14/ios10-allow-use-data/"/>
+    <id>https://macxer.com/2016/11/14/ios10-allow-use-data/</id>
     <published>2016-11-14T03:30:00.000Z</published>
     <updated>2017-04-28T14:40:24.000Z</updated>
     
@@ -155,17 +155,17 @@
     
     </summary>
     
-      <category term="iOS" scheme="http://hdev.me/categories/iOS/"/>
+      <category term="iOS" scheme="https://macxer.com/categories/iOS/"/>
     
     
-      <category term="iOS10" scheme="http://hdev.me/tags/iOS10/"/>
+      <category term="iOS10" scheme="https://macxer.com/tags/iOS10/"/>
     
   </entry>
   
   <entry>
     <title>TableView的Header高度问题</title>
-    <link href="http://hdev.me/2016/10/31/tableView-header-height/"/>
-    <id>http://hdev.me/2016/10/31/tableView-header-height/</id>
+    <link href="https://macxer.com/2016/10/31/tableView-header-height/"/>
+    <id>https://macxer.com/2016/10/31/tableView-header-height/</id>
     <published>2016-10-31T10:11:36.000Z</published>
     <updated>2016-11-14T13:39:26.000Z</updated>
     
@@ -180,17 +180,17 @@
     
     </summary>
     
-      <category term="iOS" scheme="http://hdev.me/categories/iOS/"/>
+      <category term="iOS" scheme="https://macxer.com/categories/iOS/"/>
     
     
-      <category term="UITableView" scheme="http://hdev.me/tags/UITableView/"/>
+      <category term="UITableView" scheme="https://macxer.com/tags/UITableView/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://hdev.me/2016/08/01/hello-world/"/>
-    <id>http://hdev.me/2016/08/01/hello-world/</id>
+    <link href="https://macxer.com/2016/08/01/hello-world/"/>
+    <id>https://macxer.com/2016/08/01/hello-world/</id>
     <published>2016-08-01T06:27:40.000Z</published>
     <updated>2016-10-28T13:10:35.000Z</updated>
     
@@ -212,7 +212,7 @@
     </summary>
     
     
-      <category term="hexo" scheme="http://hdev.me/tags/hexo/"/>
+      <category term="hexo" scheme="https://macxer.com/tags/hexo/"/>
     
   </entry>
   

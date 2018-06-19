@@ -29,7 +29,7 @@
             '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
             '<a href="http://service.weibo.com/share/share.php?title=' + title + '&url=' + encodedUrl + '&searchPic=true&style=number' + '" class="article-share-weibo" target="_blank" title="Weibo"></a>',
             '<a href="javascript:void(0);" class="article-share-wechat" target="_blank" title="Wechat"></a>',
-            '<div class="wechat-qrcode"><img src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"></div>',
+            '<div class="wechat-qrcode"><img src="http://qr.liantu.com/api.php?w=135&text=' + encodedUrl + '"></div>',
           '</div>',
         '</div>'
       ].join('');

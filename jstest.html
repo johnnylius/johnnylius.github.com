@@ -1,0 +1,233 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title> JS接口测试 </title>
+  <style type="text/css">
+  body {font-size:25pt}
+  button {font-size:25pt;}
+  </style>
+</head>
+<body>
+  <script type="text/javascript">
+  var isiOS = true;
+  var isAndorid = false;
+
+  window.onload = function() {
+    // 测试参数
+    document.getElementById("testMethod").onclick = function() {
+      console.log("测试无参数: testMethod");
+      window.App.testMethod();
+    }
+
+    document.getElementById("testChar").onclick = function() {
+      console.log("测试整型参数: testChar");
+      window.App.testChar(97); // 'a'
+    }
+
+    document.getElementById("testShort").onclick = function() {
+      console.log("测试整型参数: testShort");
+      window.App.testShort(32767); // -32768~32767
+    }
+
+    document.getElementById("testInt").onclick = function() {
+      console.log("测试整型参数: testInt");
+      var value = Math.pow(2, 31) - 1;
+      window.App.testInt(value); // -2^31~2^31-1
+    }
+
+    document.getElementById("testLong").onclick = function() {
+      console.log("测试整型参数: testLong"); // -2^63~2^63-1
+      var value = Math.pow(2, 63) - 10000;
+      window.App.testLong(value);
+    }
+
+    document.getElementById("testFloat").onclick = function() {
+      console.log("测试浮点型参数: testFloat");
+      //window.App.testFloat(-123.456);
+      window.App.testFloat(Math.PI);
+    }
+
+    document.getElementById("testDouble").onclick = function() {
+      console.log("测试浮点型参数: testDouble");
+      window.App.testDouble(Number.MAX_VALUE);
+      
+    }
+
+    document.getElementById("testBOOL").onclick = function() {
+      console.log("测试布尔型参数: testBOOL");
+      window.App.testBOOL(true);
+    }
+
+    document.getElementById("testCString").onclick = function() {
+      console.log("测试C字符串参数: testCString");
+      window.App.testCString("testCString");
+    }
+
+    // 测试对象型参数
+    document.getElementById("testNumber").onclick = function() {
+      console.log("测试对象型参数: testNumber");
+      window.App.testNumber(123);
+    }
+
+    document.getElementById("testString").onclick = function() {
+      console.log("测试对象型参数: testString");
+      window.App.testString("testString");
+    }
+
+    document.getElementById("testArray").onclick = function() {
+      console.log("测试对象型参数: testArray");
+      var array = [123, 3.14, true, "testString", new Date()];
+      window.App.testArray(array);
+    }
+
+    document.getElementById("testDict").onclick = function() {
+      console.log("测试对象型参数: testDict");
+      var json = {
+        "int":123, 
+        "float":3.14,
+        "bool":true,
+        "string":"testString", 
+        "date":new Date()
+      }
+      window.App.testDict(json);
+    }
+
+    document.getElementById("testDate").onclick = function() {
+      console.log("测试对象型参数: testDate");
+      var date = new Date();
+      window.App.testDate(date);
+    }
+
+    // 测试返回值
+    document.getElementById("returnChar").onclick = function() {
+      var result = window.App.returnChar();
+      alert(result);
+    }
+
+    document.getElementById("returnShort").onclick = function() {
+      var result = window.App.returnShort();
+      alert(result);
+    }
+
+    document.getElementById("returnInt").onclick = function() {
+      var result = window.App.returnInt();
+      alert(result);
+    }
+
+    document.getElementById("returnLong").onclick = function() {
+      var result = window.App.returnLong();
+      alert(result);
+    }
+
+    document.getElementById("returnFloat").onclick = function() {
+      var result = window.App.returnFloat();
+      alert(result);
+    }
+
+    document.getElementById("returnDouble").onclick = function() {
+      var result = window.App.returnDouble();
+      alert(result);
+    }
+
+    document.getElementById("returnBOOL").onclick = function() {
+      var result = window.App.returnBOOL();
+      alert(result);
+    }
+
+    document.getElementById("returnCString").onclick = function() {
+      var result = window.App.returnCString();
+      alert(result);
+    }
+
+    document.getElementById("returnNumber").onclick = function() {
+      var result = window.App.returnNumber();
+      alert(result);
+    }
+
+    document.getElementById("returnString").onclick = function() {
+      var result = window.App.returnString();
+      alert(result);
+    }
+
+    document.getElementById("returnArray").onclick = function() {
+      var result = window.App.returnArray();
+      alert(result);
+    }
+
+    document.getElementById("returnDict").onclick = function() {
+      var result = window.App.returnDict();
+      alert(result);
+    }
+
+    document.getElementById("returnDate").onclick = function() {
+      var result = window.App.returnDate();
+      alert(result);
+    }
+    
+    // 测试多参数
+    document.getElementById("testParam1Param2").onclick = function() {
+      console.log("测试多参数");
+      window.App.testParam1Param2("param1", "param2");
+    }
+
+    document.getElementById("testRename").onclick = function() {
+      console.log("测试多参数重命名");
+      window.App.testRename("param1", "param2");
+    }
+
+    // 测试回调
+    document.getElementById("testCallback").onclick = function() {
+      var functionName = 'callback' + Math.random().toString().substr(2);
+      window[functionName] = function(e) {
+        window[functionName] = null;
+
+        alert(e);
+        if (e) {
+          return "success";
+        } else {
+          return "fail";
+        }
+      }
+      window.App.testCallback(functionName);
+    }
+  }
+</script>
+  <center>
+    <p>+++++++++++++++ JS接口测试 +++++++++++++++</p>
+    <p>++++++++++++++ 测试参数 ++++++++++++++</p>
+    <button type="button" class="button" id="testMethod">无参数</button><br>
+    <button type="button" id="testChar">整型: char</button>
+    <button type="button" id="testShort">整型: short</button>
+    <button type="button" id="testInt">整型: int</button>
+    <button type="button" id="testLong">整型: long</button><br>
+    <button type="button" id="testFloat">浮点型: float</button>
+    <button type="button" id="testDouble">浮点型: double</button><br>
+    <button type="button" id="testBOOL">布尔型: BOOL</button>
+    <button type="button" id="testCString">C字符串</button><br>
+    <button type="button" id="testNumber">对象型: NSNumber</button>
+    <button type="button" id="testString">对象型: NSString</button>
+    <button type="button" id="testArray">对象型: NSArray</button>
+    <button type="button" id="testDict">对象型: NSDictionary</button>
+    <button type="button" id="testDate">对象型: NSDate</button><br>
+    <p>+++++++++++++ 测试返回值 +++++++++++++</p>
+    <button type="button" id="returnChar">整型: char</button>
+    <button type="button" id="returnShort">整型: short</button>
+    <button type="button" id="returnInt">整型: int</button>
+    <button type="button" id="returnLong">整型: long</button><br>
+    <button type="button" id="returnFloat">浮点型: float</button>
+    <button type="button" id="returnDouble">浮点型: double</button><br>
+    <button type="button" id="returnBOOL">布尔型: BOOL</button>
+    <button type="button" id="returnCString">C字符串</button><br>
+    <button type="button" id="returnNumber">对象型: NSNumber</button>
+    <button type="button" id="returnString">对象型: NSString</button>
+    <button type="button" id="returnArray">对象型: NSArray</button>
+    <button type="button" id="returnDict">对象型: NSDictionary</button>
+    <button type="button" id="returnDate">对象型: NSDate</button><br>
+    <p>++++++++++++++ 测试多参数 +++++++++++++</p>
+    <button type="button" id="testParam1Param2">测试多参数</button>
+    <button type="button" id="testRename">测试多参数重命名</button><br>
+    <p>++++++++++++++ 测试回调 ++++++++++++++</p>
+    <button type="button" id="testCallback">测试回调</button>
+  </center>
+</body>
+</html>
